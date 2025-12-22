@@ -33,7 +33,7 @@ else
   cp -r /tmp/store-run-repo/run/x86/* /home/build/immortalwrt/extra-packages/
 
   echo "✅ Run files copied to extra-packages:"
-  ls -lh /home/build/immortalwrt/extra-packages/*.run
+  ls -lh /home/build/immortalwrt/extra-packages/*.runDU
   # 解压并拷贝ipk到packages目录
   sh shell/prepare-packages.sh
   ls -lah /home/build/immortalwrt/packages/
@@ -60,7 +60,7 @@ PACKAGES="$PACKAGES luci-i18n-samba4-zh-cn"
 # 文件管理器
 PACKAGES="$PACKAGES luci-i18n-filemanager-zh-cn"
 # 静态文件服务器dufs(推荐)
-PACKAGES="$PACKAGES luci-i18n-dufs-zh-cn"
+# PACKAGES="$PACKAGES luci-i18n-dufs-zh-cn"
 # ======== shell/custom-packages.sh =======
 # 合并imm仓库以外的第三方插件
 PACKAGES="$PACKAGES $CUSTOM_PACKAGES"
